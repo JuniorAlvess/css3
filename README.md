@@ -1,6 +1,6 @@
 # CSS3
 
-## Repositório focado em estudos baseados em css. 
+## Repositório de estudo baseado em css. 
 
 ### O que foi abordado
 
