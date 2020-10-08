@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #01</title>
+    <style>
+        /* 
+            Absolutos
+
+            px - não é igual a 1px da maquina
+            cm
+            mm
+
+            %
+
+            viewport
+            vh - altura
+            vw - largura
+            vmin - menor dimensão
+            vmax - maior dimensão (1 vmax = 5px)
+
+            font
+            rem - trabalha com a font raiz
+            em - busca como referência uma font na tag pai e multiplica pela quantidade de em
+            é uma boa pratica utilizar, para que a font seja adaptada em uma posivel mudança na fonte do body;
+        */
+
+        .unidades-absolutas {
+            position: absolute;
+            /* sem relação */
+            font-size: 40px;
+            padding: 20px;
+            border: solid 5px #222;
+            margin: 30px;
+            width: 4cm;
+            /* pouco usado */
+            height: 20mm;
+            /* pouco usado */
+            top: 150px;
+            left: 200px;
+        }
+
+        .unidades-relativas {
+            position: absolute;
+            /* sem relação */
+            font-size: 4em;
+            padding: 5%;
+            border: solid 1vw #222;
+            margin: .8%;
+            width: 20vw;
+            height: 15vh;
+            bottom: 5%;
+            right: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="unidades-absolutas">Opa!</div>
+    <div class="unidades-relativas">Epa!</div>
+</body>
+
+</html>

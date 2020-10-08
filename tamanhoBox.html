@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tamanho Box</title>
+    <style>
+        body {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        div {
+            background-color: deepskyblue;
+            /* com esse comportamento será gerado uma soma da 
+               largura do elemento mais o padding e a borda e
+               e o elemento vai estrapolar o tamanho desejado
+
+               usando 
+               box-sizing: content-box; o comportamento será o mesmo
+               box-sizing: border-box; o comportamento será exatamente o desejado
+               pois a soma será considerada da borda para dentro do elemento
+            */
+            width: 100%;
+            height: 300px;
+            padding: 100px;
+            border: solid 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        O tamanho do Box é...
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        /* 
+            overflow: hidden; exibe somente o conteúdo no espaço destinado para a div, o resto será ocultado.
+            overflow: scroll; lhe permite mover para o eixo x e y
+            
+            se quiser exibir apenas um scroll
+            overflow-x: scroll;
+            overflow-y: hidden; 
+        */
+        div {
+            font-size: 40px;
+            height: 100px;
+            width: 260px;
+            border: solid 3px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        TudoFuncionaMuitoBemEmCSS!!!
+        Texto muito grande para caber nessa div.
+        Já pensou qual será o comportamento padrão?
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades #02</title>
+    <style>
+        /* ... */
+        .fora {
+            position: relative;
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+        }
+
+        .dentro {
+            background-color: mediumvioletred;
+            height: 100px;
+            width: 100%;
+            position: static;
+            /* 100% conteúdo */
+            position: relative;
+            /* 100% conteúdo */
+            /* position: absolute; conteúdo + padding */
+            /* position: fixed; o tamanho deixa de ser gerado baseado em cima da div pai e sim da viewport */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fora">
+        <div class="dentro"></div>
+    </div>
+</body>
+
+</html>

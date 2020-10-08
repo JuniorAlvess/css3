@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Altura e Largura</title>
+    <style>
+        /* 
+            As tags html e body por padrão tem a altura equivalente ao
+            tamanho dos seus elementos 
+         */
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-size: 40px;
+            background-color: coral;
+            height: 100%;
+            margin: 0;
+        }
+
+        div {
+            background-color: seagreen;
+        }
+
+        span {
+            background-color: dodgerblue;
+        }
+
+        /* Lembrando que o span não sofrera alteração, pois
+           ele tem como padrão o display inline, caso queira aumentar a altura e
+           largura dele, deve ser usado o display: inline-block.
+        */
+        span,
+        div {
+            width: 50%;
+            /* height: 250px; */
+            height: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Título</div>
+    <span>Subtítulo</span>
+</body>
+
+</html>

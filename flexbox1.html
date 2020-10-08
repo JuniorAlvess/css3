@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox #01</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+
+        .big {
+            font-size: 1.5em;
+        }
+
+        /*
+            por padrão o main axis (eixo principal) é row, mas pode ser alterado usando flex-direction
+        */
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            /* alterando de row para column*/
+            flex-direction: column-reverse;
+            /* exibindo os elementos de forma reversa*/
+            flex-direction: row-reverse;
+            flex-direction: row;
+            width: 50%;
+            flex-wrap: wrap;
+            /* quebrando a linha */
+            flex-wrap: wrap-reverse;
+            flex-flow: row wrap;
+            /* flex-flow junta o flex-wrap e flex-direction */
+            height: 200px;
+            flex-flow: column-reverse wrap;
+            flex-flow: row wrap;
+
+            /* Main Axis */
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            /* Cross Axis */
+            height: 400px;
+            align-items: stretch;
+            /* padrão */
+            align-items: baseline;
+            /* alinha a linha de base das fontes*/
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+
+            /* mais de uma linha */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div class="big">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <!-- <script src="js/tag.js"></script> -->
+</body>
+
+</html>
